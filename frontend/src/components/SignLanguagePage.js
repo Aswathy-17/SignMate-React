@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import TranscriptionForm from "./TranscriptionForm";
 import { stitchVideos } from "../api";
@@ -10,6 +10,10 @@ const SignLanguagePage = ({ language, title }) => {
   const [stitchedVideoUrl, setStitchedVideoUrl] = useState(null);
   const [currentTranscription, setCurrentTranscription] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    document.title = `${title} - SignMate`;
+  }, [title]);
 
   const handleTranscription = async (transcription, videoList) => {
     setVideoList(videoList);
