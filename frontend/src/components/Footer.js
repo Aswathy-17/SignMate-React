@@ -15,13 +15,21 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Useful Links</h3>
-          <p>Github</p>
+          <p>
+        View on{" "}
+        <a
+          href="https://github.com/Aswathy-17/SignMate-React"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </p>
         </div>
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>NITK Surathkal, Mangalore</p>
+          <p>RSET, Kakkanad</p>
           <p>aprameyadash.191it209@nitk.edu.in</p>
-          <p>pratham.191it241@nitk.edu.in</p>
           <p>+91 7735784564</p>
           <p>+91 9008240665</p>
         </div>
